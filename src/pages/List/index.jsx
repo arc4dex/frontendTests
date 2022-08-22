@@ -1,10 +1,11 @@
-
+import ListCards from "../../components/ListCards"
+import { ContainerCards } from "./styles"
 
 function List(){
   return(
-    <>
-      <h1>Hello</h1>
-    </>
+    <ContainerCards>
+      <ListCards/>      
+    </ContainerCards>
   )
 }
 

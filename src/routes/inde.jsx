@@ -10,7 +10,7 @@ function Routes(){
       <Route exact path={"/"}>
         <Home/>
       </Route>
-      <Route path={"list"}>
+      <Route path={"/list"}>
         <List/>
       </Route>
     </Switch>
