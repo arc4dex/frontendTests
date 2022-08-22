@@ -34,7 +34,7 @@ export default createGlobalStyle`
         background-image: url(${background});
         color: #ffffff;
 
-        width: 1280px;
+        width: 100vh;
         height: auto;
         display: flex;
       }
@@ -52,3 +52,4 @@ export default createGlobalStyle`
       }
     }
 `
+
