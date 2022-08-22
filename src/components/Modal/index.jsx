@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { BackGround, Menu } from "./style";
 
-function Modal({setModal}){
+function Modal({setModal, goToList}){
 
   const history = useHistory()
 
@@ -16,16 +16,13 @@ function Modal({setModal}){
     }, 1000);
   }
 
-  function goList(){
-    history.push("/list")
-  }
 
   return(
       <BackGround handleCloseUser={isModalClosed} onClick={modalClose}>
         <Menu>
           <div>
             <h1>Home</h1>
-            <h1 onClick={goList}>Listagem</h1>
+            <h1 onClick={goToList}>Listagem</h1>
           </div>
         </Menu>
       </BackGround>

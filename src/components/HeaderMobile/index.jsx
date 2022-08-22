@@ -4,7 +4,7 @@ import { IconButton } from "@mui/material";
 import { useState } from "react";
 import Modal from "../Modal";
 
-function HeaderMobile(){
+function HeaderMobile({goToList}){
 
   const [modal, setModal] = useState(false)
 
@@ -15,7 +15,7 @@ function HeaderMobile(){
 
   return (
     <HeaderNavMobile>
-      {modal === true && <Modal setModal={setModal}/>}
+      {modal === true && <Modal setModal={setModal} goToList={goToList}/>}
       <IconButton onClick={openModal}>
        <MenuOutlinedIcon sx={{
           color: '#6D4BF8',

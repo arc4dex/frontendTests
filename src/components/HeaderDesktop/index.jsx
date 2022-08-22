@@ -1,14 +1,10 @@
 import { useHistory } from "react-router-dom"
 import { NavDesk } from "./styles"
 
-function HeaderDesktop(){
+function HeaderDesktop({goToList}){
 
   const history = useHistory()
 
-  function goToList(){
-    history.push("/list")
-  }
-  
   function goToHome(){
     history.push("/")
   }
