@@ -19,7 +19,7 @@ function HeaderMobile(){
       <IconButton onClick={openModal}>
        <MenuOutlinedIcon sx={{
           color: '#6D4BF8',
-          fontSize: 80,
+          fontSize: 70,
         }}/>
       </IconButton>
     </HeaderNavMobile>

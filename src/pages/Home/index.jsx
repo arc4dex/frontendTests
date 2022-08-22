@@ -1,8 +1,12 @@
+import HeaderDesktop from "../../components/HeaderDesktop";
 import HeaderMobile from "../../components/HeaderMobile";
 
 function Home(){
   return(
-    <HeaderMobile/>
+    <>
+      <HeaderMobile/>
+      <HeaderDesktop/>
+    </>
   )
 }
 
