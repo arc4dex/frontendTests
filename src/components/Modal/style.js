@@ -61,6 +61,7 @@ export const Menu = styled.section`
     h1{
       cursor: pointer;
 
+      margin-bottom: 1.3rem;
       :hover{
         color: var(--blue)
       }

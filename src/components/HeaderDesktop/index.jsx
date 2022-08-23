@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom"
 import { NavDesk } from "./styles"
+import { motion } from 'framer-motion'
 
 function HeaderDesktop({goToList}){
 
@@ -11,10 +12,14 @@ function HeaderDesktop({goToList}){
 
   return(
     <NavDesk>
-      <div>
+      <motion.div
+        initial={{opacity:0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+      >
         <h1 onClick={goToHome}>Home</h1>
         <h1 onClick={goToList}>List</h1>
-      </div>
+      </motion.div>
     </NavDesk>
   )
 }

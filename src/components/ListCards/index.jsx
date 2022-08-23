@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Api } from "../../services"
 import { ContainerImg } from "./styles"
+import { motion } from 'framer-motion'
 
 function ListCards(){
 
@@ -14,14 +15,18 @@ function ListCards(){
 
   return(
    <ContainerImg>
-    <ul>
+    <motion.ul
+      initial={{opacity:0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+    >
       {cats?.map((element) => {
         return <li key={element.id}>
             <img src={element.url} alt="" />
           </li>
         
       })}
-    </ul>
+    </motion.ul>
    </ContainerImg>
   )
 }

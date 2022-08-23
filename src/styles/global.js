@@ -1,21 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
 import background from '../img/background.png'
-import { css } from 'styled-components'
-
-const Luckiest = css`
-  @font-face {
-    font-family: 'Luckiest Guy';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/luckiest-guy-v18-latin-regular.eot'); 
-    src: local(''),
-        url('../fonts/luckiest-guy-v18-latin-regular.eot?#iefix') format('embedded-opentype'), 
-        url('../fonts/luckiest-guy-v18-latin-regular.woff2') format('woff2'),
-        url('../fonts/luckiest-guy-v18-latin-regular.woff') format('woff'), 
-        url('../fonts/luckiest-guy-v18-latin-regular.ttf') format('truetype'), 
-        url('../fonts/luckiest-guy-v18-latin-regular.svg#LuckiestGuy') format('svg'); 
-  }
-`
 
 export default createGlobalStyle`
   * {
@@ -32,15 +16,17 @@ export default createGlobalStyle`
     
       body{
         background-image: url(${background});
+        background-size: cover;
         color: #ffffff;
 
-        width: 100vh;
+        width: 100vw;
         height: auto;
         display: flex;
       }
 
       h1,h2, h3, p, label{
-        font-family: ${Luckiest};
+        font-family: 'Luckiest Guy';
+        font-weight: 400;
       }
 
       button{

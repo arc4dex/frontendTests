@@ -1,4 +1,4 @@
-import Routes from './routes/inde';
+import Routes from './routes/routes';
 import GlobalStyle from './styles/global'
 
 function App() {

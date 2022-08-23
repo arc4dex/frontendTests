@@ -16,12 +16,17 @@ function Modal({setModal, goToList}){
     }, 1000);
   }
 
+  function goToHome(){
+    history.push("/")
+    setModal(false)
+  }
+
 
   return(
       <BackGround handleCloseUser={isModalClosed} onClick={modalClose}>
         <Menu>
           <div>
-            <h1>Home</h1>
+            <h1 onClick={goToHome}>Home</h1>
             <h1 onClick={goToList}>Listagem</h1>
           </div>
         </Menu>
